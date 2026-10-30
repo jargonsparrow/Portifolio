@@ -62,8 +62,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const d = new FormData(form);
         const body = encodeURIComponent(d.get('message') + '\n\nFrom: ' + d.get('name') + ' (' + d.get('email') + ')');
         document.getElementById('form-note').textContent = 'Opening your email app...';
-        window.location.href = 'mailto:bensonngugi@proton.me?subject=' + encodeURIComponent('Portfolio enquiry from ' + d.get('name')) + '&body=' + body;
+        window.location.href = 'mailto:ngugibenson@proton.me?subject=' + encodeURIComponent('Portfolio enquiry from ' + d.get('name')) + '&body=' + body;
     });
+
+    // Project category filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const filterable = document.querySelectorAll('.project-card[data-category]');
+    filterBtns.forEach(btn => btn.addEventListener('click', () => {
+        const f = btn.dataset.filter;
+        filterBtns.forEach(b => {
+            const on = b === btn;
+            b.classList.toggle('is-active', on);
+            b.setAttribute('aria-pressed', String(on));
+        });
+        filterable.forEach(c => {
+            const show = f === 'all' || c.dataset.category === f;
+            c.hidden = !show;
+            if (show) { c.style.opacity = '1'; c.style.transform = 'translateY(0)'; }
+        });
+    }));
 
     // Theme toggle (dark default, remembered)
     const root = document.documentElement;
@@ -80,17 +97,5 @@ document.addEventListener('DOMContentLoaded', () => {
         paintTheme();
     });
 
-    // Project filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const groups = document.querySelectorAll('.category-section');
-    filterBtns.forEach(btn => btn.addEventListener('click', () => {
-        const f = btn.dataset.filter;
-        filterBtns.forEach(b => {
-            const on = b === btn;
-            b.classList.toggle('is-active', on);
-            b.setAttribute('aria-pressed', String(on));
-        });
-        groups.forEach(g => { g.hidden = !(f === 'all' || g.id === f); });
-    }));
 
 });
