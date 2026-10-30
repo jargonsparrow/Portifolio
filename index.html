@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Benson Ngugi: video editing, cybersecurity, coding and backend development portfolio.">
-    <title>Benson Ngugi | Video Editor, Cybersecurity &amp; Backend Developer</title>
+    <meta name="description" content="Benson Ngugi: IT student focused on web application security and penetration testing. Video editing as a hobby.">
+    <title>Benson Ngugi | Web Security &amp; Penetration Testing</title>
     <meta name="theme-color" content="#0a0a1a">
+    <meta name="author" content="Benson Ngugi">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Benson Ngugi | Video Editor, Cybersecurity &amp; Backend Developer">
-    <meta property="og:description" content="Visual storytelling, security solutions and robust backend systems.">
+    <meta property="og:url" content="https://enmessara.tech">
+    <meta property="og:title" content="Benson Ngugi | Web Security &amp; Penetration Testing">
+    <meta property="og:description" content="Web application security testing, vulnerability assessment and clear reporting.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23645aff'/%3E%3Ctext x='50' y='66' font-size='46' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'%3EBN%3C/text%3E%3C/svg%3E">
     <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
     <link rel="stylesheet" href="style.css">
@@ -19,6 +21,7 @@
 <body>
     <a href="#projects" class="skip-link">Skip to projects</a>
 
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">Benson Ngugi</a>
@@ -26,7 +29,9 @@
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#writeups" class="nav-link">Write-ups</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#hobby" class="nav-link">Hobby</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">&#9728;</button>
@@ -37,9 +42,13 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
+            <p style="background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-left: 5px solid #ffc107; padding: 12px 16px; margin: 10px 0; border-radius: 4px; font-weight: bold; font-family: sans-serif; display: flex; align-items: center; gap: 8px;">
+    <span>⚠️</span> THIS PAGE WILL BE UPDATED REGULARLY, SO KEEP ON CHECKING :)
+</p>
+                <p class="hero-pill"><span class="dot" aria-hidden="true"></span>Open to internships &amp; junior security roles</p>
                 <h1 class="hero-title">Benson Ngugi</h1>
-                <p class="hero-subtitle">Video Editor · Cybersecurity Learner · Backend Developer</p>
-                <p class="hero-description">Video production, security assessments and Python backend engineering, delivered with clear communication and dependable results.</p>
+                <p class="hero-subtitle">IT Student · Web Application Security · Penetration Testing</p>
+                <p class="hero-description">I find and responsibly report weaknesses in web applications: XSS, SQL injection, broken access control and more, using Burp Suite, Kali Linux and my own Python tooling.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -54,7 +63,7 @@
                         <img src="images/enmessara.png" alt="Benson Ngugi" class="avatar-img" width="150" height="150" onerror="this.style.display='none'">
                     </div>
                     <h3 class="profile-name">Benson Ngugi</h3>
-                    <p class="profile-title">Backend & Security Professional</p>
+                    <p class="profile-title">Web Security Learner</p>
                 </div>
             </div>
         </div>
@@ -64,342 +73,368 @@
         <div class="container about-grid">
             <div>
                 <h2 class="section-title about-title">About Me</h2>
-                <p class="about-text">I'm a Kenya-based creator and engineer who blends storytelling with security-first engineering. I started out cutting videos, got hooked on how systems work, and now build and protect software for clients and teams.</p>
-                <p class="about-text">I care about clean, reliable work and clear communication. Whether it's a brand film, a security audit or a backend API, I focus on results you can measure.</p>
-                <div class="chips">
-                    <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Web testing</span><span class="chip">Kdenlive</span><span class="chip">Burp Suite</span><span class="chip">Wireshark</span><span class="chip">Docker</span><span class="chip">Linux</span>
-                </div>
+                <p class="about-text">I'm a Kenya-based IT student (Meru University of Science and Technology, 2024–2028) focused on web application security. I enjoy understanding how a web app breaks, proving it safely in a lab, and explaining the fix clearly.</p>
+                <p class="about-text">I work through the OWASP Top 10 hands-on, build small tools to automate recon, and write up what I find. Outside security I edit videos as a hobby.</p>
+                <div class="chips"><span class="chip">Burp Suite</span><span class="chip">OWASP Top 10</span><span class="chip">Web testing</span><span class="chip">Kali Linux</span><span class="chip">Wireshark</span><span class="chip">Linux</span><span class="chip">Python</span><span class="chip">Git</span></div>
             </div>
             <div class="stats">
-                <div class="stat"><strong>1+</strong><span>Years Experience</span></div>
-                <div class="stat"><strong>4</strong><span>Projects Delivered</span></div>
-                <div class="stat"><strong>2</strong><span>Happy Clients</span></div>
+                <div class="stat"><strong>1+</strong><span>Years Learning Security</span></div>
+                <div class="stat"><strong>1</strong><span>Public Security Tool</span></div>
+                <div class="stat"><strong>Top 10</strong><span>OWASP Focus</span></div>
             </div>
         </div>
     </section>
 
     <section class="skills-section" id="skills">
         <div class="container">
-            <h2 class="section-title">Areas of Expertise</h2>
+            <h2 class="section-title">Security Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon skill-icon-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></div>
-                    <h3 class="skill-name">Video Editing</h3>
-                    <p class="skill-description">Cinematic storytelling, color grading, motion graphics, and post-production for brands and creators.</p>
+                    <div class="skill-icon skill-icon-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3 class="skill-name">Web Application Testing</h3>
+                    <p class="skill-description">Manual testing for XSS, SQL injection, broken access control and authentication flaws using Burp Suite and Kali Linux.</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon skill-icon-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-                    <h3 class="skill-name">Cybersecurity</h3>
-                    <p class="skill-description">Penetration testing, vulnerability assessment, and defense architecture to protect digital assets.</p>
+                    <div class="skill-icon skill-icon-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></div>
+                    <h3 class="skill-name">Vulnerability Assessment</h3>
+                    <p class="skill-description">Scanning, triaging and ranking findings by risk, then documenting them with clear reproduction steps and fixes.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon skill-icon-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
-                    <h3 class="skill-name">Coding</h3>
-                    <p class="skill-description">Clean, efficient Python code for automation, data processing and security tooling.</p>
+                    <h3 class="skill-name">Security Automation</h3>
+                    <p class="skill-description">Python scripts that automate recon and scanning so results are repeatable and saved for later review.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon skill-icon-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></div>
-                    <h3 class="skill-name">Backend Development</h3>
-                    <p class="skill-description">Scalable, secure APIs, databases and server-side systems built with Python.</p>
+                    <h3 class="skill-name">Linux &amp; Network Security</h3>
+                    <p class="skill-description">Comfortable on the Linux command line and analysing traffic with Wireshark to understand how requests really flow.</p>
                 </div>
+            </div>
+            <p class="learning-label">Currently learning</p>
+            <div class="chips learning-chips">
+                <span class="chip">PortSwigger Web Security Academy</span><span class="chip">API security</span><span class="chip">Authentication &amp; session attacks</span><span class="chip">Writing pentest reports</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section" id="process">
+        <div class="container">
+            <h2 class="section-title">How I Test</h2>
+            <p class="section-subtitle">A repeatable approach to web application assessments</p>
+            <ol class="process-grid">
+                <li class="process-step"><span class="process-num">01</span><h3>Recon</h3><p>Map the app: pages, parameters, technologies and entry points.</p></li>
+                <li class="process-step"><span class="process-num">02</span><h3>Test</h3><p>Probe for OWASP Top 10 issues by hand and with Burp Suite.</p></li>
+                <li class="process-step"><span class="process-num">03</span><h3>Validate</h3><p>Confirm each finding is real and safe to reproduce.</p></li>
+                <li class="process-step"><span class="process-num">04</span><h3>Report</h3><p>Rate the risk and write clear reproduction steps.</p></li>
+                <li class="process-step"><span class="process-num">05</span><h3>Fix</h3><p>Recommend practical fixes and re-test them.</p></li>
+            </ol>
+            <p class="ethics-note"><strong>Ethics:</strong> I only test my own lab environments, intentionally vulnerable apps, and systems I have written permission to assess.</p>
+        </div>
+    </section>
+
+    <section class="writeups-section" id="writeups">
+        <div class="container">
+            <h2 class="section-title">Security Write-ups</h2>
+            <p class="section-subtitle">Six vulnerability classes I am studying in depth: how they happen, how I test them in a lab, and how to fix them</p>
+            <div class="writeups-grid">
+                <a class="writeup-card" href="writeups/broken-access-control.html">
+                    <span class="writeup-num">01</span>
+                    <h3 class="writeup-title">Broken Access Control</h3>
+                    <div class="chips mini"><span class="chip">OWASP Top 10 A01</span><span class="chip">API5 BFLA</span></div>
+                    <p class="writeup-summary">Users acting outside their permissions: reading other people's data, reaching admin functions, or changing things they should not.</p>
+                    <span class="writeup-status">Study notes ready &middot; lab walkthrough in progress</span>
+                    <span class="writeup-cta">Read write-up &rarr;</span>
+                </a>
+                <a class="writeup-card" href="writeups/ssrf.html">
+                    <span class="writeup-num">02</span>
+                    <h3 class="writeup-title">Server-Side Request Forgery (SSRF)</h3>
+                    <div class="chips mini"><span class="chip">OWASP A10:2021 (merged into A01:2025)</span><span class="chip">API7:2023</span></div>
+                    <p class="writeup-summary">Tricking a server into making requests for you, reaching internal services and cloud metadata that the internet cannot see.</p>
+                    <span class="writeup-status">Study notes ready &middot; lab walkthrough in progress</span>
+                    <span class="writeup-cta">Read write-up &rarr;</span>
+                </a>
+                <a class="writeup-card" href="writeups/idor-bola.html">
+                    <span class="writeup-num">03</span>
+                    <h3 class="writeup-title">IDOR / BOLA</h3>
+                    <div class="chips mini"><span class="chip">OWASP A01 (CWE-639)</span><span class="chip">API1:2023 BOLA</span></div>
+                    <p class="writeup-summary">Changing an ID in a request to access someone else's object, the most common serious flaw in modern APIs.</p>
+                    <span class="writeup-status">Study notes ready &middot; lab walkthrough in progress</span>
+                    <span class="writeup-cta">Read write-up &rarr;</span>
+                </a>
+                <a class="writeup-card" href="writeups/indirect-prompt-injection-tool-misuse.html">
+                    <span class="writeup-num">04</span>
+                    <h3 class="writeup-title">Indirect Prompt Injection &amp; Tool Misuse in AI/LLM Systems</h3>
+                    <div class="chips mini"><span class="chip">OWASP LLM01:2025 Prompt Injection</span><span class="chip">OWASP LLM06:2025 Excessive Agency</span></div>
+                    <p class="writeup-summary">Hidden instructions in content an AI reads can make it leak data or misuse its tools, with no access to the chat required.</p>
+                    <span class="writeup-status">Study notes ready &middot; lab walkthrough in progress</span>
+                    <span class="writeup-cta">Read write-up &rarr;</span>
+                </a>
+                <a class="writeup-card" href="writeups/business-logic-race-conditions.html">
+                    <span class="writeup-num">05</span>
+                    <h3 class="writeup-title">Business Logic &amp; Race Condition Flaws</h3>
+                    <div class="chips mini"><span class="chip">OWASP A06 Insecure Design</span><span class="chip">CWE-362 Race Condition</span></div>
+                    <p class="writeup-summary">Abusing legitimate features in unintended ways, and beating single-use limits by sending requests at the same instant.</p>
+                    <span class="writeup-status">Study notes ready &middot; lab walkthrough in progress</span>
+                    <span class="writeup-cta">Read write-up &rarr;</span>
+                </a>
+                <a class="writeup-card" href="writeups/broken-authentication-oauth.html">
+                    <span class="writeup-num">06</span>
+                    <h3 class="writeup-title">Broken Authentication &amp; OAuth Flaws</h3>
+                    <div class="chips mini"><span class="chip">OWASP A07 Identification &amp; Authentication Failures</span><span class="chip">API2:2023</span></div>
+                    <p class="writeup-summary">Weak login, session and token handling, plus misconfigured OAuth 2.0 flows that lead to account takeover.</p>
+                    <span class="writeup-status">Study notes ready &middot; lab walkthrough in progress</span>
+                    <span class="writeup-cta">Read write-up &rarr;</span>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="projects-section" id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A curated selection of work across all disciplines</p>
-            <div class="filters" role="group" aria-label="Filter projects">
-                <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
-                <button class="filter-btn" data-filter="video-editing" aria-pressed="false">Video Editing</button>
-                <button class="filter-btn" data-filter="cybersecurity" aria-pressed="false">Cybersecurity</button>
-                <button class="filter-btn" data-filter="coding" aria-pressed="false">Coding</button>
-                <button class="filter-btn" data-filter="backend-development" aria-pressed="false">Backend Development</button>
-            </div>
+            <h2 class="section-title">Security Projects</h2>
+            <p class="section-subtitle">Tools and labs I build to learn by doing. Start with the Beginner ones and work up.</p>
+            <div class="filters" role="group" aria-label="Filter projects by category"><button class="filter-btn is-active" data-filter="all">All</button><button class="filter-btn" data-filter="recon">Recon &amp; Scanning</button><button class="filter-btn" data-filter="labs">Practice Labs</button><button class="filter-btn" data-filter="auth">Auth &amp; Access</button><button class="filter-btn" data-filter="ai">AI/LLM Security</button><button class="filter-btn" data-filter="defense">Detection &amp; Defense</button><button class="filter-btn" data-filter="reporting">Reporting</button></div>
+            <div class="projects-grid">
 
-            <div class="category-section" id="video-editing">
-                <h3 class="category-title"><span class="category-number">01</span> Video Editing</h3>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Brand Cinematic Reel" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://vimeo.com/brandcinematic" class="project-link" target="_blank" rel="noopener">Live Project &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Brand Cinematic Reel</h4>
-                            <p class="project-description">A high-end 3-minute brand story video featuring color grading and cinematic motion graphics.</p>
+                <div class="project-card" data-category="recon">
+                    <div class="project-image">
+                        <img src="images/web_image.png" alt="Web Scanner" width="600" height="400" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/enmessara/web_scanner" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
                         </div>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Music Video Production" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://youtube.com/musicvideo" class="project-link" target="_blank" rel="noopener">Live Project &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Music Video Production</h4>
-                            <p class="project-description">Multi-camera live performance edit synced to a full audio track with visual effects.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Documentary Editing" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://vimeo.com/documentaryedit" class="project-link" target="_blank" rel="noopener">Live Project &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Documentary Editing</h4>
-                            <p class="project-description">Long-form documentary sequence with archival footage integration and sound design.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Product Launch Video" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://youtube.com/productlaunch" class="project-link" target="_blank" rel="noopener">Live Project &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Product Launch Video</h4>
-                            <p class="project-description">Teaser and full launch video for a SaaS product with animated UI overlays.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=SProject+Under+Progress" alt="Sports Highlight Reel" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://vimeo.com/sportshighlight" class="project-link" target="_blank" rel="noopener">Live Project &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Sports Highlight Reel</h4>
-                            <p class="project-description">Fast-paced highlights package with tempo-synced cuts and kinetic typography.</p>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Recon &amp; Scanning</span><span class="level">Security</span><span class="status-done">Completed</span></p>
+                        <h4 class="project-title">Web Scanner</h4>
+                        <p class="project-description">Automated website scanner that discovers sensitive paths and saves the results for later review.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="category-section" id="cybersecurity">
-                <h3 class="category-title"><span class="category-number">02</span> Cybersecurity</h3>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/web_image.png" alt="Penetration Testing Framework" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/enmessara/web_scanner" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Web Scanner</h4>
-                            <p class="project-description">Automated website scanner which gives you the sensitive path and saves the result later for later.</p>
-                        </div>
+                <div class="project-card is-placeholder" data-category="recon">
+                    <div class="project-image project-placeholder" role="img" aria-label="Security Headers &amp; TLS Auditor: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Zero Trust Architecture" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/zerotrust-arch" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Zero Trust Architecture</h4>
-                            <p class="project-description">End-to-end zero-trust network deployment with identity-aware proxy and micro-segmentation.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Vulnerability Management Platform" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/vuln-manager" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Vulnerability Management Platform</h4>
-                            <p class="project-description">Centralized dashboard for tracking CVEs, patch status, and risk scoring across cloud infrastructure.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="SIEM Log Analyzer" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/siem-analyzer" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">SIEM Log Analyzer</h4>
-                            <p class="project-description">Custom log correlation engine with real-time alerting for anomalous activity detection.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Incident Response Playbook" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/incident-response" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Incident Response Playbook</h4>
-                            <p class="project-description">Comprehensive incident response procedures and automation scripts for SOC teams.</p>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Recon &amp; Scanning</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Security Headers &amp; TLS Auditor</h4>
+                        <p class="project-description">Python CLI that checks a site for HSTS, CSP, X-Frame-Options, cookie flags, TLS version and certificate expiry, then prints a scored report.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">HTTP headers</span><span class="chip">Cookie flags</span><span class="chip">TLS basics</span></div>
+                        
                     </div>
                 </div>
-            </div>
-
-            <div class="category-section" id="coding">
-                <h3 class="category-title"><span class="category-number">03</span> Coding</h3>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Data Pipeline Automation" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/data-pipeline-auto" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Data Pipeline Automation</h4>
-                            <p class="project-description">Python-based ETL pipeline with automated scheduling, validation, and monitoring for analytics.</p>
-                        </div>
+                <div class="project-card is-placeholder" data-category="recon">
+                    <div class="project-image project-placeholder" role="img" aria-label="Subdomain &amp; Tech Fingerprinter: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="API Gateway Microservice" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/api-gateway-svc" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">API Gateway Microservice</h4>
-                            <p class="project-description">Python (FastAPI) microservice for request routing, rate limiting, authentication, and traffic observability.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Distributed Task Queue" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/dist-task-queue" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Distributed Task Queue</h4>
-                            <p class="project-description">Python async task queue with Redis backend, backpressure handling, and web UI dashboard.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Security Scanning CLI Tool" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/security-cli" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Security Scanning CLI Tool</h4>
-                            <p class="project-description">Command-line tool for automated dependency vulnerability scanning and policy enforcement.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Real-time Collaboration Engine" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/collab-engine" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Real-time Collaboration Engine</h4>
-                            <p class="project-description">WebSocket-based CRDT engine for collaborative editing with conflict resolution.</p>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Recon &amp; Scanning</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Subdomain &amp; Tech Fingerprinter</h4>
+                        <p class="project-description">Passive recon tool that finds subdomains from certificate transparency logs, resolves them and identifies technologies from response headers.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">DNS</span><span class="chip">Attack surface mapping</span><span class="chip">Passive recon</span></div>
+                        
                     </div>
                 </div>
-            </div>
-
-            <div class="category-section" id="backend-development">
-                <h3 class="category-title"><span class="category-number">04</span> Backend Development</h3>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="E-commerce REST API" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/ecommerce-api" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">E-commerce REST API</h4>
-                            <p class="project-description">Scalable order, inventory and payments API built with FastAPI and PostgreSQL, with JWT auth and rate limiting.</p>
-                        </div>
+                <div class="project-card is-placeholder" data-category="labs">
+                    <div class="project-image project-placeholder" role="img" aria-label="Home Pentest Lab: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/auth.png" alt="Authentication Service" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/enmessara/auth-service" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Authentication Service</h4>
-                            <p class="project-description">OAuth2 and JWT identity service with role-based access control, refresh tokens and audit logging.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Task Scheduler API" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/task-scheduler-api" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Task Scheduler API</h4>
-                            <p class="project-description">Background job and scheduling service using Celery and Redis, with retries and monitoring.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Healthcare Records API" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/healthcare-records-api" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Healthcare Records API</h4>
-                            <p class="project-description">Patient records backend with encrypted storage, access control and appointment scheduling endpoints.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://placehold.co/600x400/0a0a1a/ffffff?text=Project+Under+Progress" alt="Real Estate Listings Backend" width="600" height="400" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://github.com/realestate-backend" class="project-link" target="_blank" rel="noopener">GitHub &#8599;</a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Real Estate Listings Backend</h4>
-                            <p class="project-description">Property listings API with search, geospatial filtering and secure payment webhooks.</p>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Practice Labs</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Home Pentest Lab</h4>
+                        <p class="project-description">Docker Compose lab running OWASP Juice Shop and DVWA on an isolated network, with Burp Suite configured as the proxy.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">Docker networking</span><span class="chip">Burp setup</span><span class="chip">Safe testing</span></div>
+                        
                     </div>
                 </div>
+                <div class="project-card is-placeholder" data-category="labs">
+                    <div class="project-image project-placeholder" role="img" aria-label="Vulnerable API: Build, Break, Fix: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Practice Labs</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Vulnerable API: Build, Break, Fix</h4>
+                        <p class="project-description">Tiny API with deliberate IDOR/BOLA and mass-assignment bugs. Exploit it in the lab, patch it, and write a before/after note.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">BOLA</span><span class="chip">Mass assignment</span><span class="chip">Secure fixes</span></div>
+                        <a class="related-link" href="writeups/idor-bola.html">Pairs with: IDOR / BOLA write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="labs">
+                    <div class="project-image project-placeholder" role="img" aria-label="SSRF Practice App: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Practice Labs</span><span class="level">Security</span></p>
+                        <h4 class="project-title">SSRF Practice App</h4>
+                        <p class="project-description">URL-preview app with a basic SSRF bug. Test it with a local listener, then fix it using an allowlist and IP validation.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">SSRF</span><span class="chip">URL parsing</span><span class="chip">Egress controls</span></div>
+                        <a class="related-link" href="writeups/ssrf.html">Pairs with: Server-Side Request Forgery (SSRF) write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="labs">
+                    <div class="project-image project-placeholder" role="img" aria-label="Race Condition Test Harness: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Practice Labs</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Race Condition Test Harness</h4>
+                        <p class="project-description">Python asyncio script that fires parallel requests at your own lab endpoint (coupon or balance), counts duplicate successes, then verifies the fix.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">Race conditions</span><span class="chip">Atomic updates</span><span class="chip">asyncio</span></div>
+                        <a class="related-link" href="writeups/business-logic-race-conditions.html">Pairs with: Business Logic &amp; Race Condition Flaws write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="auth">
+                    <div class="project-image project-placeholder" role="img" aria-label="JWT &amp; Session Security Lab: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Auth &amp; Access</span><span class="level">Security</span></p>
+                        <h4 class="project-title">JWT &amp; Session Security Lab</h4>
+                        <p class="project-description">Local app with weak token handling to practice finding issues, then fix it with strict verification, short expiry and rotation.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">JWT structure</span><span class="chip">Session management</span><span class="chip">Token validation</span></div>
+                        <a class="related-link" href="writeups/broken-authentication-oauth.html">Pairs with: Broken Authentication &amp; OAuth Flaws write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="auth">
+                    <div class="project-image project-placeholder" role="img" aria-label="OAuth 2.0 Misconfiguration Lab: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Auth &amp; Access</span><span class="level">Security</span></p>
+                        <h4 class="project-title">OAuth 2.0 Misconfiguration Lab</h4>
+                        <p class="project-description">Run a local identity provider (such as Keycloak) with a client app. Test redirect_uri, state and PKCE handling, then harden the client.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">OAuth / OIDC</span><span class="chip">PKCE</span><span class="chip">ID token validation</span></div>
+                        <a class="related-link" href="writeups/broken-authentication-oauth.html">Pairs with: Broken Authentication &amp; OAuth Flaws write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="ai">
+                    <div class="project-image project-placeholder" role="img" aria-label="Prompt Injection Playground: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">AI/LLM Security</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Prompt Injection Playground</h4>
+                        <p class="project-description">Local chatbot that summarizes documents. Plant canary instructions in the content and measure which mitigations stop them.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">Indirect injection</span><span class="chip">Canary testing</span><span class="chip">Mitigation</span></div>
+                        <a class="related-link" href="writeups/indirect-prompt-injection-tool-misuse.html">Pairs with: Indirect Prompt Injection &amp; Tool Misuse in AI/LLM Systems write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="ai">
+                    <div class="project-image project-placeholder" role="img" aria-label="LLM Agent Tool-Misuse Sandbox: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">AI/LLM Security</span><span class="level">Advanced</span></p>
+                        <h4 class="project-title">LLM Agent Tool-Misuse Sandbox</h4>
+                        <p class="project-description">Toy agent with fake tools (mock email and file access). Observe excessive agency, then add allowlists and human approval.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">Excessive agency</span><span class="chip">Least privilege</span><span class="chip">Human-in-the-loop</span></div>
+                        <a class="related-link" href="writeups/indirect-prompt-injection-tool-misuse.html">Pairs with: Indirect Prompt Injection &amp; Tool Misuse in AI/LLM Systems write-up &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="defense">
+                    <div class="project-image project-placeholder" role="img" aria-label="Web Log Attack Detector: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Detection &amp; Defense</span><span class="level">Defense</span></p>
+                        <h4 class="project-title">Web Log Attack Detector</h4>
+                        <p class="project-description">Parses nginx or Apache access logs and flags SQL injection, XSS, path traversal, scanners and brute-force patterns.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">Log analysis</span><span class="chip">Regex detection</span><span class="chip">SOC thinking</span></div>
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="defense">
+                    <div class="project-image project-placeholder" role="img" aria-label="ModSecurity + OWASP CRS Lab: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Detection &amp; Defense</span><span class="level">Advanced</span></p>
+                        <h4 class="project-title">ModSecurity + OWASP CRS Lab</h4>
+                        <p class="project-description">Put a ModSecurity WAF in front of Juice Shop, attack it, review the blocks and tune false positives.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">WAF rules</span><span class="chip">OWASP CRS</span><span class="chip">Tuning</span></div>
+                        
+                    </div>
+                </div>
+                <div class="project-card is-placeholder" data-category="reporting">
+                    <div class="project-image project-placeholder" role="img" aria-label="Sample Penetration Test Report: planned project">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Planned</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-meta"><span class="cat">Reporting</span><span class="level">Security</span></p>
+                        <h4 class="project-title">Sample Penetration Test Report</h4>
+                        <p class="project-description">Professional report on an intentionally vulnerable app: executive summary, findings, severity ratings, reproduction steps and fixes.</p>
+                        <p class="learn-label">I will learn</p>
+                        <div class="chips mini"><span class="chip">Risk rating</span><span class="chip">Clear writing</span><span class="chip">Remediation</span></div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section hobby-section" id="hobby">
+        <div class="container">
+            <h2 class="section-title">Hobby: Video Editing</h2>
+            <p class="section-subtitle">What I do for fun away from the terminal</p>
+            <div class="projects-grid">
+
+                <div class="project-card is-placeholder">
+                    <div class="project-image project-placeholder" role="img" aria-label="Brand Cinematic Reel: currently under development">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Currently under development</span>
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">Brand Cinematic Reel</h4>
+                        <p class="project-description">A short brand story video with colour grading and cinematic motion graphics.</p>
+                    </div>
+                </div>
+
+                <div class="project-card is-placeholder">
+                    <div class="project-image project-placeholder" role="img" aria-label="Music Video Edit: currently under development">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Currently under development</span>
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">Music Video Edit</h4>
+                        <p class="project-description">Multi-camera performance edit synced to the full audio track.</p>
+                    </div>
+                </div>
+
+                <div class="project-card is-placeholder">
+                    <div class="project-image project-placeholder" role="img" aria-label="Highlight Reel: currently under development">
+                        <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+                        <span class="ph-badge">Currently under development</span>
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">Highlight Reel</h4>
+                        <p class="project-description">Fast-paced highlights with tempo-synced cuts and kinetic typography.</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -407,7 +442,7 @@
     <section class="contact-section" id="contact">
         <div class="container">
             <h2 class="section-title">Let's Work Together</h2>
-            <p class="section-subtitle">Available for freelance projects and full-time opportunities. Reach out anytime.</p>
+            <p class="section-subtitle">Open to internships, junior security roles and freelance security work. Reach out anytime.</p>
             <div class="contact-grid">
 
                 <div class="contact-item">
@@ -416,7 +451,7 @@
                     </div>
                     <div class="contact-info">
                         <h4>Email</h4>
-                        <a href="mailto:bensonngugi@proton.me" class="contact-link">bensonngugi@proton.me</a>
+                        <a href="mailto:ngugibenson@proton.me" class="contact-link">ngugibenson@proton.me</a>
                     </div>
                 </div>
 
@@ -436,7 +471,7 @@
                     </div>
                     <div class="contact-info" >
                         <h4>WhatsApp</h4>
-                        <a href="https://wa.me/254727374449" class="contact-link" target="_blank" rel="noopener">+254 727 374 449</a>
+                        <a href="https://wa.me/254741438856" class="contact-link" target="_blank" rel="noopener">+254 741 438 856</a>
                     </div>
                 </div>
 
@@ -456,7 +491,7 @@
                     <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
                     <input type="email" name="email" placeholder="Your email" aria-label="Your email" required>
                 </div>
-                <textarea name="message" rows="5" placeholder="Tell me about your project" aria-label="Message" required></textarea>
+                <textarea name="message" rows="5" placeholder="Tell me about the role or project" aria-label="Message" required></textarea>
                 <button type="submit" class="btn btn-primary">Send Message</button>
                 <p class="form-note" id="form-note" role="status"></p>
             </form>
