@@ -66,51 +66,6 @@ The site is a static page with **no framework, no build step and no dependencies
 └── *.svg             # Contact icons
 ```
 
-## Getting started
-
-### Prerequisites
-
-A modern web browser. Python 3 is optional, only needed for the local server.
-
-### Run locally
-
-```bash
-# Clone the repository
-git clone https://github.com/enmessara/portfolio.git
-cd portfolio
-
-# Option 1: open index.html in your browser
-
-# Option 2: serve it locally
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-## Customisation
-
-| To change | Edit |
-|---|---|
-| Profile photo | Replace `images/profile.jpg` (square, 600 × 600 px or larger) |
-| CV | Replace `cv.pdf` |
-| Name, bio, skills, stats | `index.html` |
-| Projects | `index.html`, in the `#projects` section |
-| Accent colour | `--accent` and `--accent-text` in `style.css` |
-| Contact details | `#contact` section in `index.html` |
-
-**Adding a project:** copy an existing `.project-card` block into the matching category and update its image, link, title and description.
-
-## Deployment
-
-The site is static, so any static host works.
-
-**GitHub Pages**
-
-1. Push the repository to GitHub.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
-4. Save. The site will be live at `https://<username>.github.io/<repository>/`.
-
-**Netlify / Vercel / Cloudflare Pages:** import the repository, leave the build command empty and set the publish directory to the project root.
 
 ## Browser support
 
